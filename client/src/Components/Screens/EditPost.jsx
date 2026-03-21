@@ -12,7 +12,7 @@ const EditPost = () => {
 
   const getData = () => {
     axios
-      .get(`http://localhost:5000/api/post/getById/${postId}`)
+      .get(`https://blog-app-4e0h.onrender.com/api/post/getById/${postId}`)
       .then((response) => {
         // console.log(response.data.post);
         setTitle(response.data.post.title);
@@ -27,7 +27,7 @@ const EditPost = () => {
     e.preventDefault();
     const updatedPost = { title, description };
     axios
-      .put(`http://localhost:5000/api/post/update/${postId}`, updatedPost)
+      .put(`https://blog-app-4e0h.onrender.com/api/post/update/${postId}`, updatedPost)
       .then((response) => {
         console.log("Post updated successfully:", response.data);
         navigate("/");

@@ -12,7 +12,7 @@ const PostDetails = () => {
 
   const getPostDetails = () => {
     axios
-      .get(`http://localhost:5000/api/post/getById/${postId}`)
+      .get(`https://blog-app-4e0h.onrender.com/api/post/getById/${postId}`)
       .then((response) => {
         setPost(response.data.post);
         // console.log(response.data);

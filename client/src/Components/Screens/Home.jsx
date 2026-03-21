@@ -9,7 +9,7 @@ const Home = () => {
 
   const getData = () => {
     axios
-      .get("http://localhost:5000/api/post/get")
+      .get("https://blog-app-4e0h.onrender.com/api/post/get")
       .then((res) => {
         setAllPosts(res?.data?.posts);
         // console.log(res.data.posts);
@@ -28,7 +28,7 @@ const Home = () => {
 
   const handleDelete = (postId) => {
     axios
-      .delete(`http://localhost:5000/api/post/delete/${postId}`)
+      .delete(`https://blog-app-4e0h.onrender.com/api/post/delete/${postId}`)
       .then((res) => {
         console.log("Post deleted successfully:", res.data);
         // Refresh the list of posts after deletion

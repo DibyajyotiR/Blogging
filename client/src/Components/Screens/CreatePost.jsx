@@ -22,7 +22,7 @@ const CreatePost = () => {
     // console.log("New Post Created:", newPost);
 
     axios
-      .post("http://localhost:5000/api/post/create", newPost)
+      .post("https://blog-app-4e0h.onrender.com/api/post/create", newPost)
       .then((response) => {
         console.log("Post successfully created:", response.data);
         setSuccessful("Post created successfully!");
