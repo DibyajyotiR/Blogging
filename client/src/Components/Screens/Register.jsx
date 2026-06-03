@@ -27,7 +27,7 @@ const Register = () => {
     setError("");
 
     axios
-      .post("https://blog-app-4e0h.onrender.com/api/auth/register", { name, email, password })
+      .post("https://blogg-qqfa.onrender.com/api/auth/register", { name, email, password })
       .then((res) => {
         login(res.data.user, res.data.token);
         navigate("/");

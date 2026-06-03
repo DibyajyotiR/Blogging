@@ -22,7 +22,7 @@ const Login = () => {
     setError("");
 
     axios
-      .post("http://localhost:5000/api/auth/login", { email, password })
+      .post("https://blogg-qqfa.onrender.com/api/auth/login", { email, password })
       .then((res) => {
         login(res.data.user, res.data.token);
         navigate("/");

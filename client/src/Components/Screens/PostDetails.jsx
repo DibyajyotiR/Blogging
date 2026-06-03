@@ -27,7 +27,7 @@ const PostDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`https://blog-app-4e0h.onrender.com/api/post/getById/${postId}`)
+      .get(`https://blogg-qqfa.onrender.com/api/post/getById/${postId}`)
       .then((res) => setPost(res.data.post))
       .catch(() => setError("Could not load this post."))
       .finally(() => setLoading(false));
