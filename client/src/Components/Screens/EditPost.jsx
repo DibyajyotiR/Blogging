@@ -15,8 +15,8 @@ const EditPost = () => {
   const [success, setSuccess] = useState("");
   const [originalTitle, setOriginalTitle] = useState("");
 
-  const titleLimit = 100;
-  const descLimit = 1000;
+  const titleLimit = 50;
+  const descLimit = 3000;
 
   useEffect(() => {
     api

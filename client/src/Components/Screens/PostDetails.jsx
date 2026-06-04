@@ -1,4 +1,4 @@
-import axios from "axios";
+import api from "../../utils/axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -26,8 +26,8 @@ const PostDetails = () => {
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    axios
-      .get(`https://blogg-qqfa.onrender.com/api/post/getById/${postId}`)
+    api
+      .get(`/post/getById/${postId}`)   // ✅ fixed: uses api + short URL
       .then((res) => setPost(res.data.post))
       .catch(() => setError("Could not load this post."))
       .finally(() => setLoading(false));

@@ -33,8 +33,9 @@ const Footer = () => {
             <FaLinkedin size={18} />
           </a>
           </div>
-          <p>Contact Us</p>
-          
+          <p className="text-gray-300 text-sm">
+            Contact Us
+          </p>
         </div>
         
       </div>

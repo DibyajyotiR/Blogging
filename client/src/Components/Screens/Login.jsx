@@ -39,7 +39,7 @@ const Login = () => {
 
         {/* Logo */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-slate-800">
+          <h1 className="text-3xl font-bold text-slate-800 font-serif">
             ink<span className="text-green-600">.</span>blog
           </h1>
           <p className="text-sm text-slate-500 mt-1">Welcome back! Sign in to continue.</p>
