@@ -5,7 +5,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://blog-app-4e0h.onrender.com/api",
+  baseURL: "https://blogg-qqfa.onrender.com/api",
 });
 
 // attach token from localStorage before every request
